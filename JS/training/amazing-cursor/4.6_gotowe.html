@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- Dla zwiększenia czytelności pozostawiłem jedynie komentarze dotyczące zmian.-->
+<!-- Szczegółowo o pracy w canvas na retinie na Safari Developer Library -->
+<!-- https://developer.apple.com/library/safari/documentation/AudioVideo/Conceptual/HTML-canvas-guide/SettingUptheCanvas/SettingUptheCanvas.html -->
+<html lang="pl">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>Ostra retina</title>
+		<style>
+			body{
+				margin:0;
+				padding: 0;
+				overflow: hidden;
+			}
+			/* Chcemy, aby zmiany nastąpiły tylko jeśli przeglądarka obsługuje css transforms.*/
+			/* Przydadzą nam się klasy, które dodał Modernizr.*/
+			.csstransforms .onRetina{
+				/* Skalujemy canvas o połowę */
+				/* Jeśli myślimy tylko o iOS i Androidzie to wystarczy tylko pierwszy prefix, Opera mini w tej chwili wogóle nie ma transforms, ale nie wiadomo co będzie za chwilę. */
+				-webkit-transform: scale(0.5);
+				-moz-transform: scale(0.5);
+				-ms-transform: scale(0.5);
+				-o-transform: scale(0.5);
+				transform: scale(0.5);
+
+				-webkit-transform-origin: 0 0;
+				-moz-transform-origin: 0 0;
+				-ms-transform-origin: 0 0;
+				-o-transform-origin: 0 0;
+				transform-origin: 0 0;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/rAF.js"></script>
+		<script src="js/easing.js"></script>
+
+		<script>
+			var my_canvas = document.createElement('canvas');
+			// ctx przenoszę na górę, żeby mieć wcześniej context w zmiennej
+			var ctx = my_canvas.getContext('2d');
+			// Jeśli urządzenie ma większą gęstość pixeli i nie załatwia problemu za nas (Safari na Mac Bookach z retiną, rozwiązuje problem automatycznie i nie trzeba skalować canvas ręcznie)
+			var retinaBoost = devicePixelRatio && devicePixelRatio>1 && ctx.webkitBackingStorePixelRatio && ctx.webkitBackingStorePixelRatio!=devicePixelRatio
+			//
+			// Podnieś gęstość zmiejszając wielkość canvas dzieląc długość każdego boku przez devicePixelRatio
+			if(retinaBoost){
+				// Możemy to zrobić na kilka sposobów, ale zawsze za pomocą CSS
+				// Najprostszy to css transforms. Mamy już przygotowaną klasę onRetina, wystarczy ją dodać do my_canvas
+				my_canvas.className = 'onRetina'
+
+
+			}
+			layout()
+			window.addEventListener('resize', layout, false);
+			
+			var touches = [];
+			var global_target_r = 0.4;
+			//
+			if(!Modernizr.touch){
+				window.addEventListener('mousemove', onMove, false);
+				touches.push({pageX:Math.round(my_canvas.width/2), pageY:Math.round(my_canvas.height/2)})
+			}else{
+				window.addEventListener('touchstart', onMove, false);
+				window.addEventListener('touchend', onMove, false);
+				window.addEventListener('touchmove', onMove, false);
+			}
+			// 
+			document.body.appendChild(my_canvas);
+			
+			var wszystkieKwadraty = [];
+
+			var widoczneKwadraty = [];
+			var fps = 30;
+			//
+			var ease = 'easeOutQuart';
+			// 
+			var lastTime = 0;			
+			animationLoop();
+			function animationLoop(time){
+				requestAnimationFrame( animationLoop );
+				if(time-lastTime>=1000/fps){
+					lastTime = time;
+					//
+					ctx.clearRect(0,0,my_canvas.width, my_canvas.height);
+					widoczneKwadraty.length = 0;
+					//
+					global_target_r = Math.min(0.4, global_target_r+0.01);
+					//
+					if(touches.length>0){
+						for (var i=0; i<10; i++) {
+							var p = touches[ rand(0,touches.length-1) ]
+							wszystkieKwadraty.push({
+								start_x:p.pageX/my_canvas.width,
+								start_y:p.pageY/my_canvas.height,
+								target_r:global_target_r,
+								h:rand(5,15),
+								start_a:rand(0,360),
+								t:0,
+								d:2000,
+								start_r:255,
+								start_g:rand(0,240),
+								start_b:rand(0,100)
+							});
+						}
+					}
+					for (var i=0; i<wszystkieKwadraty.length; i++) {
+						var kwadrat = wszystkieKwadraty[i];
+						//
+						kwadrat.t+=1000/fps;
+						//
+						// Promień musi być dostosowany do retiny.
+						// *(retinaBoost ? 0.5 : 1) oznacza, że jeśli canvas został powiększony to powinniśmy zmniejszyć całość o połowę, aby promień był taki jak na urządzeniu bez retiny
+						kwadrat.r = Easing.get(ease, 0, Math.round(kwadrat.target_r*my_canvas.height*(retinaBoost ? 0.5 : 1)), kwadrat.t, kwadrat.d);
+						//
+						kwadrat.a = Easing.get(ease, kwadrat.start_a, kwadrat.start_a+180, kwadrat.t, kwadrat.d);
+						//
+						kwadrat.x = Math.sin(Math.PI/180*kwadrat.a)*kwadrat.r+kwadrat.start_x*my_canvas.width;
+						kwadrat.y = Math.cos(Math.PI/180*kwadrat.a)*kwadrat.r+kwadrat.start_y*my_canvas.height;
+						// Jeśli retina powiększamy dwukrotnie x i y
+						if(retinaBoost){
+							kwadrat.x = kwadrat.x*2
+							kwadrat.y = kwadrat.y*2
+						}
+						// 
+						ctx.fillStyle = 'rgba('+kwadrat.start_r+','+kwadrat.start_g+','+kwadrat.start_b+',1)';
+						ctx.fillRect(kwadrat.x-kwadrat.h/2 ,kwadrat.y-kwadrat.h/2, kwadrat.h, kwadrat.h);
+						if(kwadrat.t<kwadrat.d){
+							widoczneKwadraty.push(kwadrat)
+						}
+					}
+					wszystkieKwadraty = widoczneKwadraty.concat();
+				}
+			}
+			function onMove(event){
+				if(event.type=='mousemove'){
+					touches[0].pageX = event.x;
+					touches[0].pageY = event.y;
+				}else{
+					touches = event.touches;
+					event.preventDefault()
+				}
+				//
+				global_target_r = Math.max(0.1, global_target_r-0.01);
+			} 
+			function layout(event){
+				// Jeśli trzeba podnieść gęstość canvas
+				if(retinaBoost){
+					// każdy z boków powinien być tyle razy większy ile wynosi gęstość pixeli (tutaj dla uproszczenia zakładamy retinę czyli 2)
+					my_canvas.width = window.innerWidth*2;
+					my_canvas.height = window.innerHeight*2;
+				}else{
+					my_canvas.width = window.innerWidth;
+					my_canvas.height = window.innerHeight;
+				}
+			}
+			function rand(min,max){
+				return Math.floor(Math.random()*(max-min+1))+min;
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!-- 
+Zrób szachownicę na 3 różne sposoby
+- wykorzystująć inline-block dla każdego pola
+- wykorzystująć float dla kązdego pola
+- wykorzystując position:absolute dla każdego pola
+
+W zadaniu 1 zrób inline-block
+
+Dodatkowo wycentruj cały kontener (div z klasą 'board') i określ jego wielkości tak by był on kwadratem, który ma 30% szerokości okna przeglądarki i dodatkowo border: 10px czarny.
+
+Tekst ma być pod szachownicą.
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Szachownica Inline-block</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .board{
+            position: absolute;
+            top: calc(50% - 15vw - 5px);
+            left: calc(50% - 15vw - 5px);
+            border: 10px black solid;
+            display: inline-block;
+            width: 30vw;
+            height: 30vw;
+            font-size: 0;
+        }
+        span{
+            display: inline-block;
+            width: 50%;
+            height: 50%;
+        }
+        span:nth-child(1), span:nth-child(4){
+            background-color: red;
+        }
+        h1 {
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            width: 100%;
+            font-family: arial;
+            font-size: 40px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <h1>Szachownica "inline-block"</h1>
+</body>
+
+</html>

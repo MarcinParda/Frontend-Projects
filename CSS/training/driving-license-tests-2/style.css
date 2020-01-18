@@ -1,0 +1,175 @@
+body{
+	background-color: #f5f0e9;
+	margin: 0 !important;
+	font-size: 16px;
+	font-family: "Segoe UI";
+}
+#topbar{
+	overflow: hidden;
+}
+#logo{
+	overflow: hidden;
+	width: 135px;
+	float: left;
+}
+#logo img{
+	display: block;
+	margin: 10px;
+	float: left;
+	width: 44px;
+}
+#logotext{
+	margin-top: 3px;
+	width: 70px;
+	float: left;
+	border-right: solid 1px #efe8e1;
+}
+#version{
+	font-size: 18px;
+	width: 115px;
+	margin-left: 10px;
+	color: #614b37;
+	float: left;
+	letter-spacing: 1px;
+}
+#settings img{
+	display: block;
+	float: left;
+	margin: 2px;
+}
+#settings{
+	display: block;
+	float: left;
+	border: solid 1px #908379;
+	color: #614b37;
+	margin: 16px; 
+	position: absolute;
+	right: 81px;
+	width: 122px;
+}
+#settingstext{
+	overflow: hidden;
+	float: left;
+}
+#buttons{
+	border-left: solid 1px #efe8e1;
+	position: absolute;
+	right: 0;
+	float: left;
+	width: 89px;
+	height: 55px;
+}
+#buttons img{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#midbar{
+	text-align: center;
+	background-color: #614b37;
+	color: #f5f0e9;
+	padding: 7.5px;
+}
+main{width: 99%; margin-left: auto; margin-right: auto; margin-top: 20px;}
+#picture{
+	height: 580px;
+	width: 69%;
+	background-color: #fffbf8;
+	margin-right: 2%;
+	border: solid 1px #c3bfb4;
+	float: left;
+	text-align: center;
+}
+#picture img{
+	margin: 0.5%;
+	height: 98%;
+	width: 98%;
+}
+#menu{
+	height: 580px;
+	width: 28%;
+	border: solid 1px #c3bfb4;
+	float: left;
+	color: #fffbf8;
+}
+#question{
+	height: 44px;
+	border-bottom: solid 1px #c3bfb4;
+	background-color: #fffbf8;
+	color: #614b37;
+	font-size: 14px;
+}
+.que{
+	width: 31%;
+	margin-left: 2%;
+	float: left;
+	margin-top: 12px;
+}
+.button{
+	padding-top: 5px;
+	height: 30px;
+	background-color: #614b37;
+	width: 30%;
+	margin-left: 2.5%;
+	margin-top: 12px;
+	float: left;
+	text-align: center;
+}
+.buttonwhite{
+	color: #908379;
+	background-color: #fffbf8;
+	border: solid 1px #c3bfb4;
+	padding-top: 5px;
+	height: 28px;
+	width: 29.5%;
+	margin-left: 2.5%;
+	margin-top: 12px;
+	float: left;
+	text-align: center;
+}
+.buttonopacity{
+	color: #614b37;
+	border: solid 1px #c3bfb4;
+	padding-top: 5px;
+	height: 28px;
+	width: 29.5%;
+	margin-left: 2.5%;
+	margin-top: 12px;
+	float: left;
+	text-align: center;
+}
+.button:hover{cursor: pointer;}
+.buttonwhite:hover{cursor: pointer;}
+.buttonopacity:hover{cursor: pointer;}
+
+#ask{
+	width: 98%;
+	padding-top: 18px;
+	padding-left: 20px;
+	height: 42px;
+	background-color: #614b37;
+	overflow: hidden;
+	margin-top: 20px;
+	color: white;
+}
+#answers{margin-left: auto; margin-right: auto;width: 30%;}
+.answer{
+	color: #614b37;
+	border: solid 1px #c3bfb4;
+	padding: 15px;
+	font-size: 40px;
+	width: 40%;
+	margin-top: 20px;
+	margin-right: 2.5%;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+a{color: black;}
+
+
+
+
+
+
+
+

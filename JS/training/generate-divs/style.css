@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    text-align: center;
+}
+
+button {
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: 2px black solid;
+    border-radius: 3px;
+    font-size: 30px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto';
+    text-align: center;
+    line-height: 50px;
+}
+
+div.circle {
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid black;
+    color: black;
+}

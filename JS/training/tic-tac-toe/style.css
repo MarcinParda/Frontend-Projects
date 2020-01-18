@@ -1,0 +1,69 @@
+body
+{
+	background-color: #313131;
+	margin: 0;
+	color: #ddd;
+}
+
+header
+{
+	font-size: 40px;
+	text-align: center;
+	padding: 20px;
+	background-color: #222;
+}
+
+.pole
+{
+	width: 100px;
+	height: 100px;
+	float: left;
+	cursor: pointer;
+	font-size: 50px;
+	color: #ddd;
+}
+
+#pole1{	border-right: 3px solid #ddd;	border-bottom: 3px solid #ddd;	border-radius: 10px 0 0 0;}
+#pole2{	border-right: 3px solid #ddd;	border-bottom: 3px solid #ddd;}
+#pole3{	border-bottom: 3px solid #ddd;	border-radius: 0 10px 0 0;}
+#pole4{	border-right: 3px solid #ddd;	border-bottom: 3px solid #ddd;}
+#pole5{	border-right: 3px solid #ddd;	border-bottom: 3px solid #ddd;}
+#pole6{	border-bottom: 3px solid #ddd;}
+#pole7{	border-right: 3px solid #ddd;	border-radius: 0 0 0 10px;}
+#pole8{	border-right: 3px solid #ddd;}
+#pole9{	border-radius: 0 0 10px 0;}
+
+
+
+#plansza
+{
+	text-align: center;
+	margin-top: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 378px;
+	lenght: 378px;
+	font-size: 30px;
+}
+
+.reset
+{
+	color: #484;
+}
+
+.reset:hover
+{
+	color: #ddd;
+	cursor: pointer;
+}
+
+footer
+{
+	position: absolute;
+	width: 100%;
+	font-size: 27px;
+	background-color: #222;
+	padding: 20px;
+	text-align: center;
+	bottom: 0;
+}

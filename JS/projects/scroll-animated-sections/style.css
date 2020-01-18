@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+html {
+    font-family: Oswald, sans-serif;
+}
+
+body {
+    overflow-x: hidden
+}
+
+nav {
+    height: 10vh;
+    background-color: black;
+}
+
+header {
+    height: 70vh;
+    background-color: royalblue;
+}
+
+.about .art2,
+.about .art4 {
+    transform: translateX(-100vw);
+    transition: .3s;
+}
+
+.about .art2.active,
+.about .art3.active,
+.about .art4.active {
+    transform: translateX(0);
+}
+
+.about .art3 {
+    transition: .3s;
+    transform: translateX(100vw);
+}
+
+.about,
+.quotes {
+    margin: 90px 0;
+}
+
+.about h1,
+.quotes h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* ABOUT */
+
+.about h2 {
+    background-color: royalblue;
+    padding: 20px 0 20px 10vw;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.about img {
+    float: left;
+    padding: 0 30px;
+}
+
+.about p {
+    font-size: 22px;
+    padding-right: 40px;
+    line-height: 2;
+}
+
+.about article {
+    margin-bottom: 30px;
+}
+
+
+/* QUOTES */
+
+.quotes {
+    padding: 0 20px;
+}
+
+.quotes p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.quotes p span {
+    color: royalblue;
+}
+
+.quotes article {
+    margin-bottom: 60px;
+    transform: scale(0);
+    transition: .3s;
+}
+
+.quotes article.art2.active {
+    transform: scale(1);
+}
+
+.quotes img {
+    display: block;
+    width: 100%;
+}
+
+.quotes .op1,
+.quotes .op2 {
+    transform: scale(0);
+}
+
+.quotes .op1.active,
+.quotes .op2.active {
+    transform: scale(1);
+}
+
+
+/* Footer */
+
+footer {
+    line-height: 80px;
+    background-color: #000;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+}

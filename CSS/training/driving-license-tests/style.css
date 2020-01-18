@@ -1,0 +1,214 @@
+body{
+	background-color: #f5f0e9;
+	margin: 0 !important;
+	font-size: 16px;
+	font-family: "Segoe UI";
+}
+#topbar{
+	overflow: hidden;
+}
+#logo{
+	overflow: hidden;
+	width: 135px;
+	float: left;
+}
+#logo img{
+	display: block;
+	margin: 10px;
+	float: left;
+	width: 44px;
+}
+#logotext{
+	margin-top: 3px;
+	width: 70px;
+	float: left;
+	border-right: solid 1px #efe8e1;
+}
+#version{
+	font-size: 18px;
+	width: 115px;
+	margin-left: 10px;
+	color: #614b37;
+	float: left;
+	letter-spacing: 1px;
+}
+#settings img{
+	display: block;
+	float: left;
+	margin: 2px;
+}
+#settings{
+	display: block;
+	float: left;
+	border: solid 1px #908379;
+	color: #614b37;
+	margin: 16px; 
+	position: absolute;
+	right: 81px;
+	width: 122px;
+}
+#settingstext{
+	overflow: hidden;
+	float: left;
+}
+#buttons{
+	border-left: solid 1px #efe8e1;
+	position: absolute;
+	right: 0;
+	float: left;
+	width: 89px;
+	height: 55px;
+}
+#buttons img{
+	margin-top: 20px;
+	margin-left: 15px;
+}
+#midbar{
+	font-size: 14px;
+	text-align: right;
+	background-color: #614b37;
+	color: #f5f0e9;
+	padding: 7.5px;
+}
+#botbar{
+	position: absolute;
+	right: 0;
+	clear: both;
+}
+#botbar img{
+	margin-right: 10px;
+	margin-top: 10px;
+}
+main{
+	margin: auto;
+	width: 730px;
+	margin-top: 200px;
+}
+#nauka{
+	background-color: #21a9ed;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#nauka:hover{
+	transform: scale(1.15);
+}
+#nauka img{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+#egzamin{
+	background-color: #78b70c;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#egzamin:hover{
+	transform: scale(1.15);
+}
+#egzamin img{
+	display: inline-block;
+	margin-top: 25px;
+}
+#skrzyżowania{
+	background-color: #b376c8;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#skrzyżowania:hover{
+	transform: scale(1.15);
+}
+#skrzyżowania img{
+	display: inline-block;
+	margin-top: 30px;
+}
+#elearning{
+	background-color: #ef3d21;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#elearning:hover{
+	transform: scale(1.15);
+}
+#elearning img{
+	display: inline-block;
+	margin-top: 30px;
+}
+#dodatki{
+	background-color: #4b64d5;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#dodatki:hover{
+	transform: scale(1.15);
+}
+#dodatki img{
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+#pomoc{
+	background-color: #ffbf0f;
+	width: 220px;
+	height: 190px;
+	margin: 10px;
+	float: left;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+	border-radius: 15px;
+	transition: 0.5s transform;
+}
+#pomoc:hover{
+	transform: scale(1.15);
+}
+#pomoc img{
+	display: inline-block;
+	margin-top: 30px;
+}
+.description{display: block; position: relative; bottom: 0;}
+a{
+	color: black;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+}
+
+/* 1 */
+button {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 40px;
+    border-style: none;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+button:hover span {
+    left: 10%;
+}
+
+span {
+    position: absolute;
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+    bottom: 0;
+    left: -100%;
+    transition: .4s;
+}
+
+/* 2 */
+button:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -90%;
+    width: 80%;
+    height: 3px;
+    background-color: #000;
+    transition: 1s cubic-bezier(0.52, -0.61, 0.59, 1.44);
+}
+
+button:nth-child(2):hover::after {
+    right: 10%;
+}
+
+/* 3 */
+.three {
+    margin-top: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+    overflow: hidden;
+    background-color: transparent;
+    transition: .3s color;
+}
+
+.three:hover {
+    color: white;
+}
+
+.three::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: .3s;
+    z-index: -1;
+}
+
+.three:hover::before {
+    height: 100%;
+}
+
+/* 4 */
+.four {
+    background-color: transparent;
+    margin-left: 15px;
+    border: 2px solid black;
+    transition: .3s color;
+}
+
+.four:hover {
+    color: white;
+}
+
+.four::after {
+    content: "";
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    height: 15px;
+    width: 100%;
+    background-color: brown;
+    transform: translateY(-50%);
+    transition: .15s right, .15s .15s height;
+    z-index: -1;
+}
+
+.four:hover::after {
+    height: 100%;
+    right: 0;
+}
+
+/* 5 */
+.five {
+    display: block;
+    margin: 15px auto;
+    padding: 0 40px;
+    border: 3px solid black;
+    position: relative;
+    line-height: 70px;
+}
+
+.five::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    border-left: 20px solid black;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.five:hover::before {
+    left: 0;
+}
+
+.five::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -20px;
+    border-left: 20px solid black;
+    border-top: 35px solid transparent;
+    border-bottom: 35px solid transparent;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.five:hover::before {
+    right: 0;
+}

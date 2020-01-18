@@ -1,0 +1,162 @@
+body
+{
+	font-size: 18px;
+	background-color: #313131;
+	margin: 0;
+}
+
+#container
+{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+nav
+{
+	width: 10%;
+	text-align: center;
+	float: left;
+}
+
+nav ol a
+{
+	text-decoration: none;
+	color: aqua;
+	display: block;
+	padding: 5px;
+}
+
+
+
+nav a:hover
+{
+	color: #313131;
+}
+
+ol > li:hover
+{
+	background-color: #ddd;
+}
+
+ol
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav ol > li
+{
+	border: 1px solid #ddd;
+}
+
+
+
+#main
+{
+	float: left;
+	width: 70%;
+}
+
+header
+{
+	font-size: 2em;
+	letter-spacing: 0.15em;
+	padding: 2%;
+	text-align: center;
+	color: aqua;
+	width: 96%;
+	font-weight: 600;
+}
+
+.green
+{
+	color: green;
+}
+
+article
+{
+	width: 94%;
+	color: #ddd;
+	font-weight: 600;
+	padding: 3%;
+	text-align: justify;
+	margin-top: -4%;
+}
+
+#sidebar
+{
+	float: left;
+	width: 20%;
+}
+
+#sidebar img
+{
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	transition: 0.5s transform ;
+	margin-bottom: 2em;
+}
+
+#sidebar img:hover
+{
+	transform: scale(1.5);
+}
+
+footer
+{
+	padding: 0.5em;
+	width: 100%;
+	color: aqua;
+	background-color: #222;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+@media only screen and (max-width: 60em){
+	nav 
+	{
+		float: none;
+		width: 80%;
+	}
+		
+	
+	nav ol
+	{
+		display: inline-block;
+	}
+	
+	nav ol > li
+	{
+		float: left;
+	}
+	
+	#container{width: 90%;}
+	
+	#main
+	{
+		width: 80%;
+	}
+	
+}
+@media only screen and (max-width: 37em){
+	body{margin: 2%;}
+	
+	footer{width: 96%;}
+	
+	#container{width: 96%;}
+	
+	nav{width: 96%;}
+	
+	#main{width: 96%; padding: 0;}
+	
+	nav ol{width: 100%;}
+	
+	nav ol > li{float: none; width: 100%;}
+	
+	#sidebar{display: none;}
+}

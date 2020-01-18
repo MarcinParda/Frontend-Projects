@@ -1,0 +1,9 @@
+body
+{
+	font-size: 35px;
+	color: red;
+	text-shadow: 
+	0 1px 0 #000,
+    0 1px 0 #555,
+    0 1px 1px #555;
+}

@@ -1,0 +1,105 @@
+<!-- Ustaw trzy kolumny za pomocą flex - max dla sekcji obejmującej 3 kolumny to 1200px -->
+<!-- Każda kolumna też ma byc kontenerem flex. Kolumny powinny mieć 25% szerokości rodzica, między kolumnami powinny być odstępy-->
+<!-- Cena zawsze na dole i obramowana -->
+<!-- link: https://websamuraj.pl/examples/fez/cennik.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cennik - wieczory panieńskie</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        html {
+            text-align: center;
+            font-family: 'open sans';
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        section {
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+        }
+        
+        h1 {
+            padding: 20px;
+        }
+        
+        h2 {
+            width: 100%;
+            padding: 20px;
+            justify-self: flex-end;
+        }
+        
+        div {
+            flex-basis: 30%;
+            background-color: #ddd;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        img {
+            width: 50%;
+        }
+        
+        p {
+            width: 100%;
+            padding: 20px;
+        }
+        
+        p.price {
+            align-self: flex-end;
+            width: 150px;
+            margin: 0 auto 150px auto;
+            background-color: white;
+            padding: 5px 20px;
+            border: 2px black solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Wieczór panieński - zaproś naszego trola!</h1>
+    <section>
+        <div class="col">
+            <h2>Opcja 1</h2>
+            <img src="1.png" alt="">
+            <p>(bardzo) Tanio</p>
+            <p class="price"><span>100 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 2</h2>
+            <img src="2.png" alt="">
+            <p>Średnio Tanio</p>
+            <p>Wielka pałka w zestawie</p>
+            <p class="price"><span>300 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 3</h2>
+            <img src="3.png" alt="">
+            <p>Niezbyt tanio</p>
+            <p>Duża moc (wytrzyma noc)</p>
+            <p>Przystojny (jak na trola)</p>
+            <p class="price"><span>500 dutków</span></p>
+        </div>
+
+    </section>
+</body>
+
+</html>
