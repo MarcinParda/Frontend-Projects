@@ -1,5 +1,5 @@
 # Frontend Projects
-## Several of my projects that I did, while learning frontend from paid courses, university etc.
+## Several of the projects that I did, while learning frontend from paid courses, university, etc.
 
 ## Mixed (HTML5, CSS3 + SASS, JS + jQuery)
 
