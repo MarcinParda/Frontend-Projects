@@ -72,6 +72,7 @@
 
 #### Animation
 
+- SVG Stroke [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/animation-svg-stroke/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/animation-svg-stroke)
 - Walking (frame picture animation) [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/animation-walking/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/animation-walking)
 - Search Icon [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/animation-search-icon/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/animation-search-icon)
 
