@@ -1,0 +1,78 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Helvetica;
+}
+
+.left-col,
+.right-col {
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+}
+
+.left-col {
+    background-color: #d45b48;
+}
+
+.right-col {
+    left: 50%;
+}
+
+.upper {
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    background-color: #4f4538;
+}
+
+.bottom {
+    position: absolute;
+    top: 50%;
+    height: 50vh;
+    width: 100%;
+    background: url("img1.png") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo {
+    font-family: Poppins;
+    color: #fff;
+    position: fixed;
+    margin: 1.4em;
+    font-weight: bolder;
+}
+
+.year {
+    position: absolute;
+    color: #000;
+    font-family: Poppins;
+    bottom: 8%;
+    font-weight: bolder;
+    transform: rotate(-90deg);
+    left: 0;
+}
+
+.buy {
+    color: #f4c8ad;
+    font-family: Poppins;
+    text-decoration: underline;
+    position: absolute;
+    right: 0%;
+    top: -2.6%;
+    margin: 1.4em;
+}
+
+.cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 50%;
+    background: url(img2.png) no-repeat 50% 50%;
+    background-size: cover;
+}
