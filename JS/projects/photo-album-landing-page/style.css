@@ -15,7 +15,7 @@ body {
 }
 
 .left-col {
-    background: #d45b48;
+    background: #b2bcaa;
 }
 
 .right-col {
@@ -27,7 +27,7 @@ body {
     width: 100%;
     top: 50%;
     height: 50vh;
-    background: #4f4538;
+    background: #64403e;
     opacity: 0;
     animation: appear-text 0.0001s linear forwards;
     animation-delay: 3s;
@@ -57,8 +57,8 @@ body {
 
 .logo {
     font-family: Poppins;
-    color: #fff;
-    position: fixed;
+    color: #c9cebd;
+    position: absolute;
     margin: 1.4em;
     font-weight: bolder;
     z-index: 1;
@@ -66,7 +66,7 @@ body {
 
 .year {
     position: absolute;
-    color: #000;
+    color: #64403e;
     font-family: Poppins;
     bottom: 8%;
     font-weight: bolder;
@@ -75,7 +75,7 @@ body {
 }
 
 .buy {
-    color: #f4c8ad;
+    color: #c9cebd;
     text-transform: uppercase;
     font-family: Poppins;
     text-decoration: underline;
@@ -83,6 +83,11 @@ body {
     right: 0%;
     top: -2.6%;
     margin: 1.4em;
+}
+
+#more:hover {
+    color: #fff;
+    cursor: pointer;
 }
 
 .cover {
@@ -101,13 +106,13 @@ body {
 
 .data {
     position: absolute;
-    top: 66%;
-    left: 33%;
+    top: 29%;
+    left: 34.2%;
     transform: translate(-50%, -50%);
-    color: #cdbba5;
+    color: #64403e;
     font-family: Poppins;
     text-transform: uppercase;
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 
 #name {
@@ -121,20 +126,25 @@ body {
 .play,
 .next ion-icon {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: #64403e;
     opacity: 0.6;
     border-radius: 50%;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(0, 0, 0, 1);
     padding: 2em;
+}
+
+ion-icon:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .about {
     position: absolute;
-    top: 40%;
-    left: 30%;
+    top: 30%;
+    left: 33%;
     transform: translate(-50%, -50%);
 }
 
@@ -189,7 +199,7 @@ body {
     position: absolute;
     top: 12%;
     left: 28%;
-    color: #cdbba5;
+    color: #64403e;
     font-family: Poppins;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -200,7 +210,7 @@ body {
     top: 80%;
     left: 10%;
     font-size: 15px;
-    color: #f4c8ad;
+    color: #64403e;
     text-transform: uppercase;
     font-family: Poppins;
     text-decoration: underline;
@@ -283,7 +293,7 @@ body {
     position: absolute;
     width: 0%;
     height: 100%;
-    background: #000;
+    background: #64403e;
     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 3.6s;
 }
