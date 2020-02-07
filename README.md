@@ -6,6 +6,8 @@
 
 - Amarok game page
   [Project](https://amarokgame.com) | [Git Page](https://github.com/MarcinParda/AmarokPage)
+- Landing page for music album
+  [Project](https://marcinparda.github.io/Frontend-Projects/JS/projects/photo-album-landing-page/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/JS/projects/photo-album-landing-page)
 - Background Slider
   [Project](https://marcinparda.github.io/Frontend-Projects/JS/training/bg-slider/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/JS/training/bg-slider)
 - Scroll animated site
