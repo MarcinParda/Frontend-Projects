@@ -44,17 +44,6 @@ body {
     animation-delay: 4.2s;
 }
 
-@media (max-width: 900px) {
-    .left-col {
-        width: 100%;
-    }
-    .right-col {
-        top: 100%;
-        left: 0%;
-        width: 100%;
-    }
-}
-
 .logo {
     font-family: Poppins;
     color: #c9cebd;
@@ -296,4 +285,23 @@ ion-icon:hover {
     background: #64403e;
     animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
     animation-delay: 3.6s;
+}
+
+a {
+    color: #c9cebd;
+}
+
+a:hover {
+    color: #fff;
+}
+
+@media (max-width: 900px) {
+    .left-col {
+        width: 100%;
+    }
+    .right-col {
+        top: 100%;
+        left: 0%;
+        width: 100%;
+    }
 }
