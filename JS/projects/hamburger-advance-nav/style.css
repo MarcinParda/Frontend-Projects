@@ -69,6 +69,10 @@ h1 {
     /* background: #000; */
 }
 
+svg.s-ion-icon:hover {
+    cursor: pointer;
+}
+
 .nav .menu ul {
     list-style: none;
     position: absolute;
@@ -87,12 +91,12 @@ h1 {
 .nav .menu ul li {
     color: #594637;
     font-weight: lighter;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 60px;
 }
 
 #tag {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: lighter;
     color: #afafaf;
     transition: 0.3s;
