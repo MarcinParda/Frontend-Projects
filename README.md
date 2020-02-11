@@ -26,7 +26,7 @@
 - Hangman game
   [Project](https://marcinparda.github.io/Frontend-Projects/JS/projects/hangman/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/JS/projects/hangman)
 - Lottery "simulation" (OOP)
-  [Project](https://marcinparda.github.io/Frontend-Projects/JS/projects/hangman/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/JS/projects/lottery)
+  [Project](https://marcinparda.github.io/Frontend-Projects/JS/projects/lottery/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/JS/projects/lottery)
 
 #### Canvas
 
@@ -61,12 +61,17 @@
 
 #### Small projects combine few things
 
-- Copied page layout from driving license learning application [Project](https://github.com/MarcinParda/Frontend-Projects/CSS/training/driving-license-tests-2/index.html) | [Git Page](https://marcinparda.github.io/Frontend-Projects/tree/master/CSS/training/driving-license-tests-2)
-- Copied another page layout from this same app as above [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/driving-license-tests/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/driving-license-tests)
+- Copied page layout from driving license learning application [Project](https://marcinparda.github.io/Frontend-Projects/CSS/projects/driving-license-tests/index.html) | [Git Page](https://marcinparda.github.io/Frontend-Projects/tree/master/CSS/training/driving-license-tests-2)
+- Copied another page layout from this same app as above [Project](https://marcinparda.github.io/Frontend-Projects/CSS/projects/driving-license-tests-2/index.html) | [Git Page](https://marcinparda.github.io/Frontend-Projects/tree/master/CSS/training/driving-license-tests)
 
 #### Flexbox
 
 - Simple menu bar [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/flexbox-menu/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/flexbox-menu)
+- Site made with flexbox [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/flexbox-site-trolls/projekt.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/flexbox-site-trolls)
+
+#### Grid
+
+- Grid RWD Site [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/grid-rwd-site/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/grid-rwd-site)
 - Site made with flexbox [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/flexbox-site-trolls/projekt.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/flexbox-site-trolls)
 
 #### Responsivity
@@ -82,7 +87,7 @@
 
 #### Div positioning
 
-- Float [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/float-chessboard/projekt.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/float-chessboard)
+- Float [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/float-chessboard/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/float-chessboard)
 - Inline-block [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/position-chessboard/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/position-chessboard)
 - Position [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/inline-block-chessboard/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/inline-block-chessboard)
 
