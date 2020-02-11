@@ -72,7 +72,6 @@
 #### Grid
 
 - Grid RWD Site [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/grid-rwd-site/index.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/grid-rwd-site)
-- Site made with flexbox [Project](https://marcinparda.github.io/Frontend-Projects/CSS/training/flexbox-site-trolls/projekt.html) | [Git Page](https://github.com/MarcinParda/Frontend-Projects/tree/master/CSS/training/flexbox-site-trolls)
 
 #### Responsivity
 
